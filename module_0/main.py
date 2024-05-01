@@ -36,7 +36,7 @@ def score_game(game_core):
 
 
 # Проверяем
-# score_game(game_core_v3)
-import pandas as pd
-pd.test()
+score_game(game_core_v3)
+#import pandas as pd
+#pd.test()
 #football = pd.read_csv('D:\Projects\skillfactory_rds\module_0\data_sf.csv')
