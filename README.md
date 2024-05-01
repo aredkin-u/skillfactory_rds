@@ -17,4 +17,4 @@
 В результате решения задач найдены такие показатели как минимальная и максимальная прибыльность, статистика по режиссерам, годам, а так же некототорые статистические данные основанные на названиях.
 
 
-[def]: https://github.com/aredkin-u/skillfactory_rds/tree/nain
+[def]: https://github.com/aredkin-u/skillfactory_rds/tree/main/module_0
