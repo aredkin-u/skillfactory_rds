@@ -2,7 +2,7 @@
 
 ## Проекты
 
-* [Проект 0. Игра Угадай число](C:\Users\Unzip\Documents\GitHub\skillfactory_rds\module_0)
+* [Проект 0. Игра Угадай число](https://github.com/aredkin-u/skillfactory_rds/tree/nain)
 * [Проект 1. ______](_________)
 * [Проект 2. ______](_________)
 
