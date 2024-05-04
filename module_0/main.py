@@ -16,6 +16,8 @@ def game_core_v3(number: int = 1) -> int:
     # Условие выхода из цикла - нахождение числа или превышение количества попыток
     while number != found_num and count < 100:
         count+=1
+        # в цикле находим центр диапазона, производим сравнение 
+        # с числом и сдвигаем границы диапазона вправо или влево
         middle_element = start_element + (end_element - start_element) // 2
         if middle_element == number:
             found_num = middle_element
