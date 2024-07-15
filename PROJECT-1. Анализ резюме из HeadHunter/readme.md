@@ -15,9 +15,9 @@
 
 
 ### Краткая информация о данных
--[Ссылка на ноутбук](https://github.com/aredkin-u/skillfactory_rds/blob/349966292d665ba08d0b1008c1492affbf5c8227/PROJECT-1.%20%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5%20%D0%B8%D0%B7%20HeadHunter/Project-1._sample-notebook.ipynb)
--[Файл с данными резюме можно взять тут](https://disk.yandex.ru/d/LtH8ZqaQFrzkUg)
--[Файл с курсами валют, можно взять тут](https://disk.yandex.ru/d/XbrF0zBbck4Wsw)
+[- Ссылка на ноутбук](https://github.com/aredkin-u/skillfactory_rds/blob/349966292d665ba08d0b1008c1492affbf5c8227/PROJECT-1.%20%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D0%B7%20%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5%20%D0%B8%D0%B7%20HeadHunter/Project-1._sample-notebook.ipynb)
+[- Файл с данными резюме можно взять тут](https://disk.yandex.ru/d/LtH8ZqaQFrzkUg)
+[- Файл с курсами валют, можно взять тут](https://disk.yandex.ru/d/XbrF0zBbck4Wsw)
 
 
 
