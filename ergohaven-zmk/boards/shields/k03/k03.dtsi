@@ -1,0 +1,91 @@
+#include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/led/led.h>
+#include "k03_layout.dtsi"
+
+/ {
+    chosen {
+      zmk,kscan = &kscan0;
+      zmk,physical-layout = &physical_layout;
+      zmk,battery = &vbatt;
+    };
+
+    default_transform: keymap_transform_0 {
+      compatible = "zmk,matrix-transform";
+      columns = <12>;
+      rows = <5>;
+      map = <
+RC(0,5)  RC(0,4)  RC(0,3)  RC(0,2)  RC(0,1)  RC(0,0)                      RC(0,6)  RC(0,7)  RC(0,8)  RC(0,9)  RC(0,10)  RC(0,11)
+RC(1,5)  RC(1,4)  RC(1,3)  RC(1,2)  RC(1,1)  RC(1,0)                      RC(1,6)  RC(1,7)  RC(1,8)  RC(1,9)  RC(1,10)  RC(1,11)
+RC(2,5)  RC(2,4)  RC(2,3)  RC(2,2)  RC(2,1)  RC(2,0)                      RC(2,6)  RC(2,7)  RC(2,8)  RC(2,9)  RC(2,10)  RC(2,11)
+RC(3,5)  RC(3,4)  RC(3,3)  RC(3,2)  RC(3,1)  RC(3,0)  RC(4,0)    RC(4,6)  RC(3,6)  RC(3,7)  RC(3,8)  RC(3,9)  RC(3,10)  RC(3,11)
+                  RC(4,5)  RC(4,4)  RC(4,3)  RC(4,2)  RC(4,1)    RC(4,7)  RC(4,8)  RC(4,9)  RC(4,10) RC(4,11)
+      >;
+    };
+
+    kscan0: kscan {
+      diode-direction = "col2row";
+      wakeup-source;
+    };
+
+    vbatt: vbatt {
+        status = "okay";
+        compatible = "zmk,battery-voltage-divider";
+        io-channels = <&adc 7>;
+        output-ohms = <1564000>;
+        full-ohms = <(806000 + 1564000)>;
+    };
+
+    encoder_L1: encoder_L1 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    encoder_R1: encoder_R1 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    encoder_L2: encoder_L2 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    encoder_R2: encoder_R2 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio1 6 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    encoder_L3: encoder_L3 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    encoder_R3: encoder_R3 {
+        compatible = "alps,ec11";
+        a-gpios = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <24>;
+        status = "disabled";
+    };
+
+    sensors: sensors {
+        compatible = "zmk,keymap-sensors";
+        sensors = <&encoder_L1 &encoder_R1 &encoder_L2 &encoder_R2 &encoder_L3 &encoder_R3>;
+        triggers-per-rotation = <12>;
+    };
+};

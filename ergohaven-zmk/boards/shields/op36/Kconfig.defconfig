@@ -1,0 +1,16 @@
+if SHIELD_OP36_QUBE || SHIELD_OP36_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "EH_OP36"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_OP36_QUBE || SHIELD_OP36_LEFT_QUBE || SHIELD_OP36_LEFT || SHIELD_OP36_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

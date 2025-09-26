@@ -1,0 +1,16 @@
+if SHIELD_VELVET_V3_QUBE || SHIELD_VELVET_V3_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "Velvet_v3"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_VELVET_V3_QUBE || SHIELD_VELVET_V3_LEFT_QUBE || SHIELD_VELVET_V3_LEFT || SHIELD_VELVET_V3_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

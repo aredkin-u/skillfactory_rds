@@ -1,0 +1,6 @@
+#include "velvet_v3_ui_right.overlay"
+
+&trackball_split {
+  status = "okay";
+  device = <&trackball>;
+};

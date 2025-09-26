@@ -1,0 +1,9 @@
+file_format: "1"
+id: ergohaven
+name: Ergohaven E73 2G4M08S1C
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+url: https://ergohaven.xyz/

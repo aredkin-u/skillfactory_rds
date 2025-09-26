@@ -1,0 +1,19 @@
+if SHIELD_K03_QUBE || SHIELD_K03_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "K:03"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_K03_QUBE || SHIELD_K03_LEFT_QUBE || SHIELD_K03_LEFT || SHIELD_K03_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+config ZMK_POINTING
+    default y
+
+endif

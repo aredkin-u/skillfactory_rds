@@ -1,0 +1,11 @@
+config SHIELD_VELVET_V3_LEFT_QUBE
+    def_bool $(shields_list_contains,velvet_v3_left_qube)
+
+config SHIELD_VELVET_V3_QUBE
+    def_bool $(shields_list_contains,velvet_v3_qube)
+
+config SHIELD_VELVET_V3_LEFT
+    def_bool $(shields_list_contains,velvet_v3_left)
+
+config SHIELD_VELVET_V3_RIGHT
+    def_bool $(shields_list_contains,velvet_v3_right)

@@ -1,0 +1,24 @@
+# Electronut Labs Papyr board configuration
+
+# Copyright (c) 2020 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+if BOARD_ERGOHAVEN
+
+config BOARD
+    default "ergohaven"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+config BOARD_ERGOHAVEN_CHARGER
+    default n
+
+endif # BOARD_ERGOHAVEN
